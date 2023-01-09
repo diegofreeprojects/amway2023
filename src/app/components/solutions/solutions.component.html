@@ -1,0 +1,43 @@
+
+<div class="solutions" >
+    <div class="custom-container">
+        
+        <h1 class="title">El camino <b >Irresistible</b></h1>
+
+        <h5 style="margin-bottom: 2rem;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure laudantium quia perspiciatis placeat pariatur dolor minima ipsa quod aut, atque voluptate maxime molestias optio nulla dolorum quasi consequatur nisi blanditiis?</h5>
+
+        <h1 class="title">¿A quién <b >Venderle</b>?</h1>
+
+        <h5 style="margin-bottom: 1rem;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure laudantium quia perspiciatis placeat pariatur dolor minima ipsa quod aut, atque voluptate maxime molestias optio nulla dolorum quasi consequatur nisi blanditiis?</h5>
+
+        <h5 style="margin-bottom: 2rem;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure laudantium quia perspiciatis placeat pariatur dolor minima ipsa quod aut, atque voluptate maxime molestias optio nulla dolorum quasi consequatur nisi blanditiis?</h5>
+
+        <div class="text-center" style="margin-bottom: 2rem;">
+            <h5><b>Haz clic en alguno de los perfiles para saber más</b></h5>
+        </div>
+
+
+        <swiper 
+            [autoplay]="{ delay: 2500, disableOnInteraction: false }"
+            [loop]="true"
+            [grabCursor]="true"
+            [breakpoints]="breakpoints"
+            [initialSlide]="0" >
+            <ng-template *ngFor="let solution of solutions" swiperSlide >
+                <div class="solution-card">
+                    <img [src]="solution.img" draggable="false" alt="">
+                    <div (click)="navigateTo(['solution', solution.id])" class="description">
+                        <div>
+                            <div class="{{ solution.icon }}"></div>
+                            <small>{{ solution.name }}</small>
+                        </div>
+                        <span class="number">{{ solution.id }}</span> 
+                    </div>
+                </div>
+            </ng-template>
+        </swiper>
+
+        
+    </div>
+
+</div>

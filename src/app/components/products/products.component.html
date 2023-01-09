@@ -1,0 +1,27 @@
+<div class="products">
+
+    <img src="assets/imgs/Productos/ELEMENT_1.png" draggable="false" class="parallax-img" alt="">
+    
+    <div class="custom-container">
+
+        <div class="text-center" style="margin-bottom: 3rem; position: relative;">
+            <h2 class="title">Conoce todo sobre los</h2>
+            <h1 class="border-title">NATURALMENTE</h1>
+            <h1 class="bold-title">IRRESISTIBLES</h1>
+        </div>
+
+        <swiper 
+            [grabCursor]="true"
+            [navigation]="true"
+            [breakpoints]="breakpoints"
+            [initialSlide]="0" >
+            <ng-template *ngFor="let product of products" swiperSlide >
+                <div class="product-card" >
+                    <img [src]="product.img" draggable="false" alt="">
+                    <h4 (click)="navigateTo(['product', product.id])" >{{ product.name }}</h4>
+                </div>
+            </ng-template>
+        </swiper>
+    </div>
+
+</div>

@@ -1,0 +1,102 @@
+<div class="why-irresistible" >
+
+
+    <!--img id="parallax1" src="assets/imgs/parallax1.png" style="width: 150px; height: 150px; position: absolute; left: 0px; top: 0px;" alt="image">
+
+    <img id="parallax2" src="assets/imgs/parallax2.png" style="width: 150px; height: 150px; position: absolute; right: 0px; top: 0px;" alt="image">
+
+    <img id="parallax3" src="assets/imgs/parallax3.png" style="width: 200px; height: 200px; position: absolute; left: 0px; bottom: 0px;" alt="image">
+
+    <img id="parallax4" src="assets/imgs/parallax4.png" style="width: 200px; height: 200px; position: absolute; right: 0px; bottom: 0px;" alt="image" -->
+
+
+
+    <div class="custom-container" style="position: relative;">
+        
+        <h1 class="title" style="margin-bottom: 2rem;">¿Qué son los productos <b>Naturalmente Irresistibles</b></h1>
+        
+        <h4 class="text-center" style="margin-bottom: 2rem;">Es una selección de productos de nuestro portafolio que te ayuda a conectar con las necesidades de tus <b class="blue">clientes</b> para que <b class="blue">vendas</b> y <b class="blue">ganes más</b>.</h4>
+        
+        <h1 class="title">¿Por qué son <b>Naturalmente Irresistibles</b>?</h1>
+
+        <div class="custom-row" >
+            <div *ngFor="let item of whyIrresistibles" class="custom-col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="irresistible-card" >
+                                <div>
+                                    <h5>{{ item.smallTitle }}</h5>
+                                    <h2>{{ item.bigTitle }}</h2>
+                                </div>
+                                
+                                <img [src]="item.img" draggable="false" alt="">
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="irresistible-detail-card">
+                                <img [src]="item.icon" draggable="false" alt="">
+                                
+                                <h6>{{ item.description }}</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+<div class="why-irresistible2" >
+    <div class="custom-container">
+        
+        <h1 class="title green">¿Por qué son <b>Irresistibles</b>?<br><span style="font-weight: 900;">Productos con alta calidad</span></h1>
+        
+        <h4 class="text-center green">Lo mejor de la naturaleza y lo mejor de la ciencia con <span style="font-weight: 900;">calidad garantizada</span> desde la semilla hasta el producto</h4>
+        
+    </div>
+
+    <div class="logos-section">
+
+       <div class="custom-container">
+        <div class="row" style="margin: 0;" >
+            <div class="col-12 col-md-4" style="margin-bottom: 2rem;">
+                <div class="text-center">
+                    <img src="assets/imgs/logos1.png" style="width: 100%; height: 180px;" draggable="false" alt="">
+                </div><br>
+                <div class="text-center">
+                    <button class="custom-btn" type="button" >Saber más</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-4" style="margin-bottom: 2rem;">
+                <div class="text-center">
+                    <img src="assets/imgs/logos2.png" style="width: 100%; height: 180px;" draggable="false" alt="">
+                </div><br>
+                <div class="text-center">
+                    <button class="custom-btn" type="button" >Saber más</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-4" style="margin-bottom: 2rem;" >
+                <div class="text-center">
+                    <img src="assets/imgs/logos3.png" style="width: 100%; height: 180px;" draggable="false" alt="">
+                </div><br>
+                <div class="text-center">
+                    <button class="custom-btn" type="button" >Saber más</button>
+                </div>
+            </div>
+        </div>
+       </div>
+
+    </div>
+
+    <div class="custom-container">
+        <h1 class="title green">Descarga la herramienta</h1>
+        
+        <div class="text-center">
+            <button class="custom-btn" type="button" >Descargar</button>
+        </div>
+    </div>
+</div>
+

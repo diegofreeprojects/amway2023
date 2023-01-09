@@ -1,0 +1,75 @@
+
+@import "~swiper/css";
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+
+.swiper-button-prev, .swiper-button-next{
+    color: #222 !important;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 3rem !important;
+    font-weight: 900 !important;
+}
+
+.custom-container {
+    width: 85%;
+    height: 100%;
+}
+
+
+.no-overflow {
+    overflow-y: hidden;
+}
+
+.custom-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+app-root {
+    height: 100%;
+}
+
+// extra Small devices (smartphones, 576px and down)
+@media (min-width: 250px) and (max-width: 374px) { 
+    .custom-container {
+        width: calc(100% - 1.5rem);
+    }
+}
+
+
+// Small devices (smartphones, 576px and down)
+@media (min-width: 375px) and (max-width: 576px) { 
+    .custom-container {
+        width: calc(100% - 1.5rem);
+    }
+}
+
+// Medium devices (tablets, 768px and down)
+@media (min-width: 577px) and (max-width: 768px) {
+    .custom-container {
+        width: calc(100% - 1.5rem);
+    }
+}
+
+// Large devices (desktops, 992px and dpwn)
+@media (min-width: 769px) and (max-width: 1024px) { 
+    
+}
+
+// X-Large devices (large desktops, 1399px and down)
+@media (min-width: 1025px) and (max-width: 1399px) {
+   
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  
+}
