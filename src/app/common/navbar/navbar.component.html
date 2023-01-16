@@ -1,7 +1,7 @@
 <div style=" display: flex; justify-content: center;">
 <div class="custom-container">
     <nav class="navbar-custom">
-        <img src="assets/imgs/logo.png" [routerLink]="['/home']" draggable="false" alt="" class="logo">
+        <img src="assets/imgs/logo.png" [routerLink]="['/why-irresistible']" draggable="false" alt="" class="logo">
         
         <div class="menu" style="position: relative;">
             <div  (mouseleave)="closeSubMenu()">
@@ -27,7 +27,7 @@
             <button [routerLink]="['/solutions']" routerLinkActive="active-route" type="button">SOLUCIONES</button>
             <button [routerLink]="['/tools']" routerLinkActive="active-route" type="button">HERRAMIENTAS</button>
             <button type="button">AUSPICIA</button>
-            <button type="button">COMPRAR</button>
+            <button [routerLink]="['/buy']" routerLinkActive="active-route" type="button">COMPRAR</button>
         </div>
         <button type="button" (click)="toggle()" class="toggle-btn" [ngClass]="{ 'change': isOpen }">
             <div class="bar1"></div>

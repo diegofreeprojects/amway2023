@@ -20,7 +20,7 @@
 
 
 .certifications-card {
-    width: 60%;
+    width: 70%;
 
     h4 {
         background: #76c655;
@@ -40,6 +40,7 @@
     background: #fff;
     text-align: center;
     padding: 1.5rem;
+    height: 100%;
     border-bottom: 1px solid #222;
 
     img {
@@ -54,20 +55,6 @@
     }
 }
 
-.custom-btn {
-    margin-top: 1rem;
-    padding: .5rem 2rem;
-    border-radius: 25px;
-    color: #fff;
-    background-color: #222;
-    outline: none;
-
-    &:active {
-        background: rgba(34, 34, 34, .9);
-    }
-}
-
-
 
 .custom-tabs {
     display: flex;
@@ -78,7 +65,7 @@
         outline: none;
         border: none;
         border-bottom: 1px solid #222;
-        padding: 1rem;
+        padding: 2rem 1rem;
         text-align: center;
         border-radius: 20px 20px 0 0;
 

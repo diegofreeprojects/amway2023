@@ -3,10 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
     {
-        path: 'home',
-        loadComponent: () => import('./components/home/home.component').then(c => c.HomeComponent)
-    },
-    {
         path: 'products',
         loadComponent: () => import('./components/products/products.component').then(c => c.ProductsComponent)
     },
@@ -35,14 +31,18 @@ const routes: Routes = [
         loadComponent: () => import('./components/tools/tools.component').then(c => c.ToolsComponent)
     },
     {
+        path: 'buy',
+        loadComponent: () => import('./components/buy/buy.component').then(c => c.BuyComponent)
+    },
+    {
         path: '**',
         pathMatch: 'full',
-        redirectTo: 'home'
+        redirectTo: 'why-irresistible'
     }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true, scrollPositionRestoration: 'top' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
