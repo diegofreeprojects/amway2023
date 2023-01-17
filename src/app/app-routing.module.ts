@@ -31,6 +31,10 @@ const routes: Routes = [
         loadComponent: () => import('./components/tools/tools.component').then(c => c.ToolsComponent)
     },
     {
+        path: 'tool/:id',
+        loadComponent: () => import('./components/country-tools/country-tools.component').then(c => c.CountryToolsComponent)
+    },
+    {
         path: 'buy',
         loadComponent: () => import('./components/buy/buy.component').then(c => c.BuyComponent)
     },

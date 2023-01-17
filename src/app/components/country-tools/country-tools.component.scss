@@ -1,0 +1,22 @@
+.tool {
+    width: 100%;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.country-img {
+    width: 100%; 
+    margin: 2rem; 
+    cursor: pointer;
+}
+
+.background {
+    background: #f4f4f4;
+    padding: 2.5rem;
+    width: 100%;
+    text-align: center;
+}

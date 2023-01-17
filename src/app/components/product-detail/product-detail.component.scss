@@ -147,6 +147,7 @@
 .parallax-img1, .parallax-img2, .parallax-img3, .parallax-img4 {
     position: absolute; 
     width: 15%;
+    transition: .5s linear;
 }
 
 .parallax-img1 {

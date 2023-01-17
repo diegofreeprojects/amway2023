@@ -113,7 +113,12 @@ app-root {
 .mb2 {
     margin-bottom: 2rem !important;
 }
-
+.mb3 {
+    margin-bottom: 3rem !important;
+}
+.mb4 {
+    margin-bottom: 4rem !important;
+}
 .general-btn {
     background: #222;
     color: #fff;
@@ -154,17 +159,86 @@ app-root {
 
 // Large devices (desktops, 992px and dpwn)
 @media (min-width: 769px) and (max-width: 1024px) { 
-    
+    .general-title {
+        font-size: 3.6rem;
+        margin-bottom: 2rem;
+    }
+
+    .general-subtitle {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .general-text {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .general-small-text {
+        font-size: .8rem;
+        margin-bottom: 2rem;
+    }
+
+    .general-btn {
+        font-size: 14px;
+        padding: 1rem 2rem;
+    }
 }
 
 // X-Large devices (large desktops, 1399px and down)
 @media (min-width: 1025px) and (max-width: 1399px) {
-   
+    .general-title {
+        font-size: 5.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .general-subtitle {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .general-text {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .general-small-text {
+        font-size: .9rem;
+        margin-bottom: 2rem;
+    }
+
+    .general-btn {
+        font-size: 18px;
+        padding: 1rem 2rem;
+    }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) and (max-width: 1599px) {
-  
+    .general-title {
+        font-size: 5.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .general-subtitle {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .general-text {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .general-small-text {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .general-btn {
+        font-size: 20px;
+        padding: 1rem 2rem;
+    }
 }
 
 @media (min-width: 1600px) {
@@ -186,6 +260,11 @@ app-root {
     .general-small-text {
         font-size: 1.5rem;
         margin-bottom: 2rem;
+    }
+
+    .general-btn {
+        font-size: 26px;
+        padding: 1rem 2rem;
     }
 }
 

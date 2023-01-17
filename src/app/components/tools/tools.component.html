@@ -14,7 +14,7 @@
                 <div class="tools-card">
                     <img [src]="tool.img" draggable="false" alt="">
                     <div>
-                        <h6 class="general-small-text">{{ tool.name }}</h6>
+                        <h6 (click)="navigateTo(['tool', tool.id])" class="general-small-text" style="cursor: pointer;">{{ tool.name }}</h6>
                         <small class="general-small-text">{{ tool.description }}</small>
                     </div>
                 </div>
