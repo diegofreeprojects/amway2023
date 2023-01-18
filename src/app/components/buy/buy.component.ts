@@ -11,21 +11,55 @@ import { Component, OnInit } from '@angular/core';
 export class BuyComponent implements OnInit {
 
     public countries: Array<any> = [
-        'assets/imgs/Compras/IMG_1.png',
-        'assets/imgs/Compras/IMG_2.png',
-        'assets/imgs/Compras/IMG_3.png',
-        'assets/imgs/Compras/IMG_4.png',
-        'assets/imgs/Compras/IMG_5.png',
-        'assets/imgs/Compras/IMG_6.png',
-        'assets/imgs/Compras/IMG_7.png',
-        'assets/imgs/Compras/IMG_8.png',
-        'assets/imgs/Compras/IMG_9.png',
-        'assets/imgs/Compras/IMG_10.png'
+        {
+            img: 'assets/imgs/Compras/IMG_1.png',
+            link: ''
+        },
+        {
+            img: 'assets/imgs/Compras/IMG_2.png',
+            link: ''
+        },
+        {
+            img: 'assets/imgs/Compras/IMG_3.png',
+            link: ''
+        }, 
+        {
+            img: 'assets/imgs/Compras/IMG_4.png',
+            link: ''
+        },
+        {
+            img: 'assets/imgs/Compras/IMG_5.png',
+            link: ''
+        },
+        {
+            img: 'assets/imgs/Compras/IMG_6.png',
+            link: ''
+        },
+        {
+            img: 'assets/imgs/Compras/IMG_7.png',
+            link: ''
+        },
+        {
+            img: 'assets/imgs/Compras/IMG_8.png',
+            link: ''
+        },
+        {
+            img: 'assets/imgs/Compras/IMG_9.png',
+            link: ''
+        },
+        {
+            img: 'assets/imgs/Compras/IMG_10.png',
+            link: ''
+        }
     ]
 
     constructor() { }
 
     ngOnInit(): void {
+    }
+
+    openLink(link: string){
+        window.open(link, '_blank');
     }
 
 }

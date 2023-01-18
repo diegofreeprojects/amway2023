@@ -82,8 +82,20 @@
         width: 100px;
     }
 
+    .general-title {
+        font-size: 2rem;
+    }
+
     .title-img {
         width: 90%;
+    }
+
+    .left-arrow {
+        width: 30px; 
+    }
+    
+    .right-arrow {
+        width: 30px;
     }
 }
 
@@ -95,15 +107,30 @@
         width: 100px;
     }
 
+    .general-title {
+        font-size: 2rem;
+    }
+
     .title-img {
         width: 90%;
+    }
+
+    .left-arrow {
+        width: 30px; 
+    }
+    
+    .right-arrow {
+        width: 30px;
     }
 }
 
 // Medium devices (tablets, 768px and down)
 @media (min-width: 577px) and (max-width: 768px) {
+    .general-title {
+        font-size: 2.6rem;
+    }
     .title-img {
-        width: 48%;
+        width: 60%;
     }
 }
 
