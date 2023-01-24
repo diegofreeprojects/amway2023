@@ -15,4 +15,8 @@ export class SponsorComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openLink(){
+    window.open('https://link', '_blank');
+  }
+
 }
