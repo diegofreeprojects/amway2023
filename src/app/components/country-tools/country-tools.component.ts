@@ -13,7 +13,7 @@ export class CountryToolsComponent implements OnInit {
 
     public tools: Array<any> = [
         {
-            name: 'Catálogo irresistible',
+            name: 'Catálogo Irresistible',
             countries: [
                 {
                     img: 'assets/imgs/Compras/IMG_1.png',
@@ -238,7 +238,52 @@ export class CountryToolsComponent implements OnInit {
             ]
         },
         {
-            name: 'Toolkit evento ABS´S',
+            name: 'ENTRENAMIENTOS IRRESISTIBLES',
+            countries: [
+                                {
+                    img: 'assets/imgs/Compras/IMG_1.png',
+                    link: ''
+                },
+                {
+                    img: 'assets/imgs/Compras/IMG_2.png',
+                    link: ''
+                },
+                {
+                    img: 'assets/imgs/Compras/IMG_3.png',
+                    link: ''
+                }, 
+                {
+                    img: 'assets/imgs/Compras/IMG_4.png',
+                    link: ''
+                },
+                {
+                    img: 'assets/imgs/Compras/IMG_5.png',
+                    link: ''
+                },
+                {
+                    img: 'assets/imgs/Compras/IMG_6.png',
+                    link: ''
+                },
+                {
+                    img: 'assets/imgs/Compras/IMG_7.png',
+                    link: ''
+                },
+                {
+                    img: 'assets/imgs/Compras/IMG_8.png',
+                    link: ''
+                },
+                {
+                    img: 'assets/imgs/Compras/IMG_9.png',
+                    link: ''
+                },
+                {
+                    img: 'assets/imgs/Compras/IMG_10.png',
+                    link: ''
+                }
+            ]
+        },
+        {
+            name: 'TRAZABILIDAD',
             countries: [
                                 {
                     img: 'assets/imgs/Compras/IMG_1.png',
