@@ -139,15 +139,15 @@ export class IngredientsComponent implements OnInit {
     ];
     public ingredients3: Array<any> = [
         {
-            img: 'assets/imgs/Ingredientes/IMG_13.png',
-            name: 'Micelas',
-            description: 'Moléculas similares a un imán que atraen y eliminan las impurezas.'
+            img: 'assets/imgs/Ingredientes/IMG_22.png',
+            name: 'REMINACT™',
+            description: 'Ayuda a disminuir manchas de café, té o tabaco. Además, combate el sarro y la caries refrescando tu aliento al mismo tiempo con un suave sabor a menta.'
         },
         {
             
-            img: 'assets/imgs/Ingredientes/IMG_11.png',
-            name: 'Sandía',
-            description: 'Un extracto de fruta que ayuda a proteger la piel de los daños causados por los radicales libres.'
+            img: 'assets/imgs/Ingredientes/IMG_23.png',
+            name: 'Fórmula BIOQUEST',
+            description: 'Incluye ingredientes derivados de fuentes naturales como el aceite de coco, provee un alto desempeño siendo biodegradable.'
         },
     ];
     public certifications: Array<any> = [
@@ -172,6 +172,19 @@ export class IngredientsComponent implements OnInit {
             route: null,
         }
     ];
+    public certifications2: Array<any> = [
+    {
+        title: 'Ingredientes Amway Home y Cuidado Personal',
+        description: '<b>REMINACT:</b> ayuda a disminuir manchas de café, té o tabaco. Además, combate el sarro y la caries refrescando tu aliento al mismo tiempo con un suave sabor a menta.',
+        route: null,
+    },
+    {
+        title: 'Ingredientes cuidado personal y Amway Home',
+        description: '<b>Fórmula BIOQUEST:</b> incluye ingredientes derivados de fuentes naturales como el aceite de coco, provee un alto desempeño siendo biodegradable.',
+        route: null,
+    },
+    ];
+
 
     public tab: number = 1;
     public view: number = 1;
